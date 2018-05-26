@@ -18,7 +18,7 @@
 		else {
 			return ("Scissors");
 		}
-
+		
 	}
  	
 	//player prompted for selection db
@@ -52,7 +52,14 @@
 			}
 		}	
 	}
-function game() 
+function game(){
+	let i
+	for (i=1; i<=5; i++){
+		console.log(round(computerPlay(),playerSelection()));
+	}
+} 
+
+console.log(game())
 </script>
 </body>
 </html>
